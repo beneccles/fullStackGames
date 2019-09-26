@@ -1,19 +1,15 @@
-import React from 'react';
-import './App.css';
-import Catalog from './components/Catalog/Catalog'
-import Cart from './components/Cart/Cart'
-import Admin from './components/Admin/Admin'
+import React from 'react'
+import './App.css'
 import Header from './components/Header/Header'
+import routes from './routes'
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Catalog/>
-      <Cart/>
-      <Admin/>
+      <Header />
+      {routes}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
